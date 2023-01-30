@@ -3,11 +3,15 @@
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="images/icon.png">
         <title>Chris Marcellus Design: inSpectrum</title>
     </head>
     <body>
+
+        <!-- Header -->
+
         <header>
             <div class="logotxt">
                 Chris Marcellus
@@ -19,55 +23,209 @@
                 <button class="header-button">Resume</button>
             </div>
         </header>
+
+        <!-- Hero Image & Title Header -->
+
         <div class="heroimg"></div>
         <section class="toptxt">
             <h1>inSpectrum Case Study</h1>
             <div class="line"></div>
             <h2>UX Researcher | UI Designer</h2>
         </section>
+
+        <!-- Intro Description -->
+
         <section class="introbody">
             <h2 class="underline">What is inSpectrum?</h2>
-            <p>inSpectrum is an app that calculates UV data based on a user’s location and gives personalized recommendations for the user to protect themselves, stay healthy, and avoid melanoma. It features hourly UV data, UV history tracker, hydration reminder, burn rate calculator, UV protection timer and activity planning.</p>
+            <p>inSpectrum is an app that calculates UV data based on a user’s location and gives personalized recommendations for the user to protect themselves, stay healthy, and avoid melanoma. It features hourly UV data, UV history tracker, hydration reminder, burn rate calculator, UV protection timer and activity planning.</p><br>
             <h3>What was my role?</h3>
-            <p>I had a hand in every step of the process with my team, from ideating, collecting research data and analyzing it to sketching and constructing wireframes, to the eventual final design where my main job was to make sure interactions with the prototype were smooth and easy to navigate.</p>
+            <p>I had a hand in every step of the process with my team, from ideating, collecting research data and analyzing it to sketching and constructing wireframes, to the eventual final design where my main job was to make sure interactions with the prototype were smooth and easy to navigate.</p><br>
             <h3>The Problem</h3>
-            <p>There is a lack of awareness of UV and how damaging it can be to a person. There needs to be an easy way for users to understand and identify what they need to protect themselves from the sun to avoid future health risks such as melanoma and skin cancer.</p>
+            <p>There is a lack of awareness of UV and how damaging it can be to a person. There needs to be an easy way for users to understand and identify what they need to protect themselves from the sun to avoid future health risks such as melanoma and skin cancer.</p><br>
             <h3>The Solution</h3>
             <p>We ideated the app and conducted interviews to determine what features would be helpful as reminders or data trackers. We then compiled the data from the interview and turned it into an app with many of these features in one convenient Main Page.</p>
         </section>
-        <ul>
-            <li class="research">
-                Research
-                <img src="images/arrow.png" class="arrow">
-            </li>
 
-            <li class="uf">
-                User Flow
-                <img src="images/arrow.png" class="arrow">
-            </li>
+        <!-- Bootstrap accordion -->
 
-            <li class="wireframes">
-                Wireframes
-                <img src="images/arrow.png" class="arrow">
-            </li>
 
-            <li class="uti">
-                Usability Tests & Iterations
-                <img src="images/arrow.png" class="arrow">
-            </li>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Research
+                    <img src="images/arrow.png" class="arrow">
+                  </button>
 
-            <li class="fd">
-                Final Design
-                <img src="images/triquetrawhite 1.png" class="triquetra">
-                <img src="images/arrow.png" class="arrow">
-            </li>
-        </ul>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Our research began with interviews:</p>
+                  <h2>Interviews</h2>
+                  <p>Our team interview 5 people that are usually involved with some form of outside activity, from skiing, hiking, running, swimming and mountain biking.</p><br>
+                  <p>Interviews were conducted, where we asked users: How long they spend outside in the sun, what activities they do outside, what concerns they had for exposure and how they protect themselves. We found that the majority of the battle is awareness and remembering to protect themselves.</p><br>
+                  <p>They found it important to know what UV Index was and how that correlated to what sunscreen they should use and how often they would need to reapply. They were also concerned with water consumption, how much they would need and how often should they drink depending on the activity they were doing. Most importantly, they wanted an app the was trustworthy and accurate with its information on UV and AQI as well.</p><br>
+                  <p>These interviews are how we came up with what features we wanted to include.</p>
+                  <br>
+                  <div class="card-center">
+                    <h2>Feature Prioritization Matrix</h2>
+                    <img src="images/inspectrum_FPM.png" class="FPM">
+                  </div>
+                  <br>
+                  <h2>Competitor Analysis</h2>
+                  <p>The main tools people use to determine how much UV radiation there is on a given day are weather apps and widgets. While these apps are helpful in getting the initial data point, not many know what the UV rating means and what they’ll need to protect themselves.</p><br>
+                  <p>We did notice one app that took into account that UV affects everyone differently, and asked many questions to create a personalized experience. We wanted to enhance that and make that a major feature for inSpectrum.</p>
+                  <br>
+                  <div class="card-center">
+                    <img src="images/inspectrum_SunDay.png" class="Competitor">
+                    <img src="images/inspectrum_UVIndexNow.png" class="Competitor">
+                  </div>
+                  <h2>User Persona</h2>
+                  <p>We imagined a user named Samantha Riggs, who is a mother of 2 children and a theme park engineer; a profession that involves her being indoors on many days and outdoors for many others. She has a family history of skin cancer and worries more about her children than about herself. In her busy life, she needs a simple all encompassing solution that will remind and inform her about what she needs to protect herself and her children.</p><br>
+                  <div class="card-center">
+                    <img src="images/SamanthaRiggs_UP.png" class="Riggs">
+                  </div>
+                  <h2>User Journey</h2>
+                  <p>To understand a user’s potential journey for using this app, a User Journey Map was created based on our User Persona so that we can visualize the steps she’d take in finding our app to better empathize and physically see the journey from beginning to end, while keeping background, goals and pain points in mind.</p><br>
+                  <div class="card-center">
+                    <img src="images/SamanthaRiggs_UJ.png" class="Riggs">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      User Flow
+                      <img src="images/arrow.png" class="arrow">
+                    </button>
+  
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>When creating the onboarding process, we sorted out what pages needed to be created and what order they should go in using a User Flow. I thought it was important to visually display this process as it would become helpful in sorting out, from registering, to creating the profile and getting to the main page, the interaction that needs to happen with this app.
+                    </p>
+                    <div class="card-center">
+                      <img src="images/ispectrum_UF.png" class="userFlow">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                      <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Wireframes
+                        <img src="images/arrow.png" class="arrow">
+                      </button>
+    
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <h2>Sketches</h2>
+                      <p>Once the User Flow was made, I was able to sketch pages that would be needed for onboarding and profile creating that gets a user to the main page.</p><br>
+                      <div class="wireframe-grid">
+                        <img src="images/Sketch1.png" class="sketch">
+                        <img src="images/Sketch2.png" class="sketch">
+                        <img src="images/Sketch3.png" class="sketch">
+                        <img src="images/Sketch4.png" class="sketch">
+                      </div>
+                      <div class="wireframe-grid">
+                        <img src="images/Sketch5.png" class="sketch">
+                        <img src="images/Sketch6.png" class="sketch">
+                        <img src="images/Sketch7.png" class="sketch">
+                        <img src="images/Sketch8.png" class="sketch">
+                      </div>
+                      <h2> Digital Prototype</h2>
+                      <p>From there, mid-fidelity wireframes were made and were prototyped so that it could be tested for usability.</p><br>
+                      <div class="wireframe-grid">
+                        <img src="images/LoFi1.gif" class="LoFi">
+                        <img src="images/LoFi2.png" class="LoFi">
+                        <img src="images/LoFi3.gif" class="LoFi">
+                        <img src="images/LoFi4.gif" class="LoFi">
+                      </div>
+                      <div class="wireframe-grid">
+                        <img src="images/LoFi5.png" class="LoFi">
+                        <img src="images/LoFi6.png" class="LoFi">
+                        <img src="images/LoFi7.gif" class="LoFi">
+                        <img src="images/LoFi8.gif" class="LoFi">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                        <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          Usability Tests & Iterations
+                          <img src="images/arrow.png" class="arrow">
+                        </button>
+      
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <h2>User Testing</h2>
+                        <p>Before we went into making our hi-fi, we wanted to test the ease of use and navigation with some user testing. Users were given 3 tasks:</p>
+                        <ul>
+                          <li>Register and allow GPS access,</li>
+                          <li>Create a profile and determine if questions are applicable to the app</li>
+                          <li>add and sync a smartwatch device, because the app is smartwatch compatible.</li>
+                        </ul>
+                        <br>
+                        <p>All users were able to complete the tasks with relative ease, but we paid attention to where they were struggling and determined we needed to make some fixes.</p><br>
+                        <div class="card-center">
+                          <img src="images/inspectrum_Test.png" class="inTest">
+                        </div>
+                        <h2>Iterations</h2>
+                        <p>Our Main Fiexes:</p>
+                        <ul>
+                          <li>Add a description to each profile question so they could better understand why we were asking those questions</li>
+                          <li>Make scrolling to the next days on the Main Page clearer</li>
+                          <li>Putting all settings into one hamburger menu because it was originally split into two.</li>
+                        </ul>
+                        <br>
+                        <div class="wireframe-grid">
+                          <img src="images/Iteration1.png" class="Iteration">
+                          <img src="images/Iteration2.png" class="Iteration">
+                          <img src="images/Iteration3.png" class="Iteration">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                          <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <div class="finalDesign">
+                              Final Design
+                             <img src="images/triquetrawhite 1.png" class="triquetra">
+                            </div>
+                            <img src="images/arrow.png" class="arrow">
+                          </button>
+        
+                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p>The UI Style for this project comes from the inspiration of UV light itself. Rainbow highlights were used as accents, representing the spectrum of light while also utilizing a dark mode for to give a clean black background look.</p><br>
+                          <div class="card-center">
+                            <img src="images/Final1.png" class="Final1">
+                          </div>
+                          <div class="wireframe-grid">
+                            <img src="images/Final2.gif" class="Final">
+                            <img src="images/Final3.gif" class="Final">
+                            <img src="images/Final4.gif" class="Final">
+                            <img src="images/FinalWatch.gif" class="Final">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+        <!-- Conclusion -->
+
         <section class="conclusion">
             <h2 class="underline">Conclusion</h2>
             <p>This prototype shows a complete and in-depth design of what the inSpectrum app would look like. From this point the next step would look into having the app developed and look for a non-profit to give the app a platform.<br>
                 <br>
                 inSpectrum could also, potentially, be combined with a bigger weather app as an extension or plug-in.</p>
         </section>
+
+        <!-- Footer -->
+
         <footer>
             <div class="fleft">
             <p>© Chris Marcellus 2023 |<a href="mailto:chrismarcelluspom@gmail.com">chrismarcelluspom@gmail.com</a>|</p>
@@ -78,6 +236,10 @@
             <img src="images/logo_flat.png" class="logo" alt="Chris Marcellus logo in color">
                 
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
 
     </body>
 </html>
