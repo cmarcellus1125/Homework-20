@@ -15,7 +15,7 @@ header{
 
 /* Chris Marcellus Header Style */
 
-.logotxt{
+.logotxt a{
     display: inline;
     float: left;
     text-align: center;
@@ -52,11 +52,15 @@ header{
     color: white;
 }
 
-.header-button:hover{
+.header-button:hover:enabled{
     background: #1C209E;
     color: white;
 }
-
+button:disabled{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+}
 .hbuttons{
     display: flex;
     flex-direction: row;
@@ -164,7 +168,7 @@ a:hover{
     border-radius: 0;
 }
 .btn:hover{
-    background: #465B65;
+    background: #465B65 !important;
     color: white;
     text-decoration: none;
 }
@@ -176,11 +180,18 @@ a:hover{
 }
 .arrow{
     height: 20.5px;
-    transition: all 0.4s ease;
+    transition: .3s ease-in-out;
 }
-.arrow.open{
+.arrow.flipped{
     transform: rotateZ(180deg);
 }
+.arrow.blur{
+    transform: rotateZ(180deg);
+}
+/* .btn.collapsed .arrow {
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+    } */
 .card-body h2{
     margin-bottom: 8px;
 }
